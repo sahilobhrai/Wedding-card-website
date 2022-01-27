@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>internship project</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- NAVBAR-->
+  <nav class="navbar navbar-expand-lg navbar-white bg-white">
+    <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon "></span>
+    </button>
+
+    <a class="navbar-brand ml-5" href="#">
+      <img src="assets/Logo.png" width="115" alt="">
+    </a>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item space">
+          <a class="nav-link" href="#">Wedding Cards</a>
+        </li>
+        <li class="nav-item space">
+          <a class="nav-link" href="#">Birthday Cards</a>
+        </li>
+        <li class="nav-item space">
+          <a class="nav-link" href="#">Feeling Cards</a>
+        </li>
+        <li class="nav-item space">
+          <a class="nav-link" href="#">Anniversary Cards</a>
+        </li>
+        <li class="nav-item login">
+          <a class="nav-link" href="#">Login | Signup</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!--body--->
+  <div class="body-section">
+    <div class="digitalbody">
+      <img src="assets/Background.jpg" class="digital-photo">
+    </div>
+
+    <!--heading-->
+    <div class="heading">
+      Digital Card Details
+    </div>
+    <div class=" cards">
+      <div class="content">
+
+
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="swiper-slide" style="background-image:url(./assets/Page1.jpg)"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide" style="background-image:url(./assets/Page2.jpg)"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide" style="background-image:url(./assets/Page3.jpg)"></div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="card-body">
+          <div class="title">
+            Card Title
+          </div>
+          <div class="price">
+            <div class="original">
+              $499
+            </div>
+            <div class="last">
+              $2000
+            </div>
+            <div class="discount">
+              75%off
+            </div>
+          </div>
+          <div class="card-text">
+            Hi, this project is made by sahil obhrai,
+            Hi, this project is made by sahil obhrai,
+            Hi, this project is made by sahil obhrai,
+            Hi, this project is made by sahil obhrai
+
+
+          </div>
+          <button type="button" class="btn btn-dark btn-lg mybtn">Try This Card</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="features">
+    Features
+  </div>
+
+  <div class=" card2">
+    <div class="cont">
+      <div class="first">
+        <div class="copyright">
+          &spades;
+        </div>
+        <div class="text">
+          Create your card in just 5 mins
+        </div>
+      </div>
+      <div class="sec">
+        <div class="copyright">
+          &spades;
+        </div>
+        <div class="text">
+          Customize the text with "Edit this page" option
+        </div>
+      </div>
+      <div class="third">
+        <div class="copyright">
+          &spades;
+        </div>
+        <div class="text">
+          Editing is available after purchase also
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: false,
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 3,
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 200,
+        modifier: 2,
+        slideShadows: false,
+      },
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
